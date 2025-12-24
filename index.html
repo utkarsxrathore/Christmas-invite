@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Christmas Date Invitation&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #1a472a; /* Deep Christmas Green */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.background-decor {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 50px rgba(0,0,0,0.5);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 10px solid #b32d2e;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.8s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* The Memory View (Hidden by default) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#memory-view {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 1s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.memory-image-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 20px rgba(0,0,0,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.memory-image {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Flashing Lights Overlay */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lights-overlay {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 20%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: 50px 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: flash 1.5s infinite alternate;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes flash {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0% { opacity: 0.3; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>100% { opacity: 0.8; filter: hue-rotate(90deg); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Existing Styles */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tree {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 0; height: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 30px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-right: 30px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 50px solid #2d5a3c;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tree:before { content: "⭐"; position: absolute; top: -25px; left: -12px; font-size: 20px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 { color: #b32d2e; margin: 10px 0; font-size: 2.2rem; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.details-box { background: #fdf2f2; padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px dashed #b32d2e; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.detail-item { display: block; margin: 5px 0; font-weight: bold; color: #1a472a; }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #b32d2e;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.snow { position: absolute; color: white; top: -20px; animation: fall linear infinite; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fall { to { transform: translateY(110vh); } }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="background-decor" id="snow-field"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card" id="main-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="invite-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tree"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;You're Invited!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;I would love to celebrate this Christmas with you. Let's make some holiday memories together!&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="details-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="detail-item"&gt;📅 Tonight, Dec 24&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="detail-item"&gt;⏰ 7:00 PM&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="detail-item"&gt;📍 Our Favorite Spot&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Dinner, lights, and lots of laughs.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="acceptInvite()"&gt;Accept Invitation&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="memory-view"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 style="color: #b32d2e; margin-bottom: 5px;"&gt;I'll See You Tonight! ❤️&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size: 0.9rem;"&gt;I can't wait to add another memory to our collection.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="memory-image-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://r2.erweima.ai/ai_image/1735064696191cxk4y0cxk4y0cxk4.jpg" alt="Our Memories" class="memory-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lights-overlay"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Snowfall logic</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const container = document.getElementById('snow-field');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const flakes = ['❄', '❅', '❆', '•'];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createSnowflake() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const flake = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flake.className = 'snow';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flake.innerText = flakes[Math.floor(Math.random() * flakes.length)];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flake.style.left = Math.random() * 100 + 'vw';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flake.style.animationDuration = (Math.random() * 3 + 4) + 's';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flake.style.opacity = Math.random();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>container.appendChild(flake);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; { flake.remove(); }, 6000);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setInterval(createSnowflake, 200);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Transition logic</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function acceptInvite() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const inviteContent = document.getElementById('invite-content');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const memoryView = document.getElementById('memory-view');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const card = document.getElementById('main-card');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Fade out invitation</p>
+<p class="p1"><span class="Apple-converted-space">            </span>inviteContent.style.display = 'none';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Show memory view</p>
+<p class="p1"><span class="Apple-converted-space">            </span>memoryView.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>memoryView.style.opacity = '1';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>card.style.maxWidth = '450px'; // Slightly widen for the photo</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 10);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
